@@ -1,0 +1,156 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffcb05;
+    color: #2a75bb;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Sección principal */
+.pokemon-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas de tipo Pokémon */
+.pokemon-type-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.pokemon-type-card:hover {
+    transform: scale(1.05);
+}
+
+/* Colores por tipo */
+.electrico {
+    background-color: #f9e79f;
+}
+.electrico:hover {
+    background-color: #f4d03f;
+}
+
+.fuego {
+    background-color: #f5b7b1;
+}
+.fuego:hover {
+    background-color: #e74c3c;
+}
+
+.planta {
+    background-color: #abebc6;
+}
+.planta:hover {
+    background-color: #27ae60;
+}
+
+.agua {
+    background-color: #aed6f1;
+}
+.agua:hover {
+    background-color: #3498db;
+}
+
+.volador {
+    background-color: #d7bde2;
+}
+.volador:hover {
+    background-color: #9b59b6;
+}
+
+.roca {
+    background-color: #d5dbdb;
+}
+.roca:hover {
+    background-color: #7f8c8d;
+}
+
+.pokemon-type-card img {
+    width: 80px;
+    height: 80px;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Sección de información */
+.pokemon-info {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+    margin: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+#info-content {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#volver-btn {
+    background-color: #ffcb05;
+    color: #2a75bb;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#volver-btn:hover {
+    background-color: #f4d03f;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

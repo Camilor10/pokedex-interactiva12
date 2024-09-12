@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pokedex Interactiva</h1>
+        <p>Selecciona un tipo de Pokémon para ver más información.</p>
+    </header>
+
+    <!-- Sección principal de selección de tipos -->
+    <section id="main-section" class="pokemon-types">
+        <div class="pokemon-type-card electrico" data-type="electrico">
+            <h2>Tipo Eléctrico ⚡</h2>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu">
+        </div>
+
+        <div class="pokemon-type-card fuego" data-type="fuego">
+            <h2>Tipo Fuego 🔥</h2>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
+        </div>
+
+        <div class="pokemon-type-card planta" data-type="planta">
+            <h2>Tipo Planta 🌿</h2>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+        </div>
+
+        <div class="pokemon-type-card agua" data-type="agua">
+            <h2>Tipo Agua 💧</h2>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
+        </div>
+
+        <div class="pokemon-type-card volador" data-type="volador">
+            <h2>Tipo Volador 🌬️</h2>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" alt="Pidgey">
+        </div>
+
+        <div class="pokemon-type-card roca" data-type="roca">
+            <h2>Tipo Roca 🪨</h2>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png" alt="Geodude">
+        </div>
+    </section>
+
+    <!-- Sección de información dinámica -->
+    <section id="info-section" class="hidden">
+        <div id="info-content"></div>
+        <button id="volver-btn">Volver</button>
+    </section>
+
+    <footer>
+        <p>Creado por [Camilo Ramirez] - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
